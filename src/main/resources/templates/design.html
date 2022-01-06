@@ -4,10 +4,14 @@
 <head>
     <title>Taco Cloud</title>
     <link rel="stylesheet" th:href="@{/styles.css}" />
+    <style>
+     .fig {
+      text-align: center;
+     }
+  </style>
 </head>
 <body>
-<h1>Design your taco!</h1>
-<img th:src="@{/images/TacoCloud.png}"/>
+<p class="fig"><img th:src="@{/images/TacoCloud.png}"/> </p>
 <form method="POST" th:object="${design}">
     <div class="grid">
         <div class="ingredient-group" id="wraps">
